@@ -8,19 +8,16 @@ function Filters({history}) {
     const [launch,setLaunch]=useState(null);
     const [land,setLand]=useState(null);
     const handleClick=(year)=>{
-        console.log('clicked')
         setYear(year);
     }
 
     useEffect(()=>{
-        console.log(`In useEffect:${launch}`)
        if(year){
            history.push('/')
            history.push(`/year/${year}`);
        }
        if (launch!=null){
            history.push('/');
-           console.log('Pushing')
            history.push(`/launch/${launch}`)
        }
       if(land!=null){
