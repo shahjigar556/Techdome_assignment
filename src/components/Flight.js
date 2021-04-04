@@ -14,7 +14,7 @@ function Flight({ flight,history}) {
     links,
   } = flight;
   const { mission_patch_small } = links;
-  console.log(launch_landing)
+  
 
   const handleClick=(history)=>{
       history.push('/Jigar')
@@ -47,7 +47,6 @@ function Flight({ flight,history}) {
                 <Card.Text as="p">
                     Successful Landing:{launch_landing}
                 </Card.Text>
-            <button onClick={(e)=>handleClick(history)}>Click me</button>
             </Card.Body>
             </Card>
 
