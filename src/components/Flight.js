@@ -15,10 +15,6 @@ function Flight({ flight,history}) {
   } = flight;
   const { mission_patch_small } = links;
   
-
-  const handleClick=(history)=>{
-      history.push('/Jigar')
-  }
   return (
       <Grid item xs={12} md={3} sm={6}>
             <Card className="my-3 p-3 rounded">
@@ -27,6 +23,7 @@ function Flight({ flight,history}) {
                 variant="top"
                 src={mission_patch_small}
                 style={{ width: "200px" }}
+                className="img-fluid"
                 />
             </div>
 
