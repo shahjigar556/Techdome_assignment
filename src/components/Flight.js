@@ -17,7 +17,7 @@ function Flight({ flight,history}) {
   
   return (
       <Grid item xs={12} md={3} sm={6}>
-            <Card className="my-3 p-3 rounded">
+            <Card className="my-3 p-3 rounded text-center">
             <div className="text-center">
                 <Card.Img
                 variant="top"
