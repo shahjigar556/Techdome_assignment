@@ -23,10 +23,10 @@ function Landing(props) {
     return (
         <React.Fragment>
             <Grid container>
-                <Grid item xs={12} sm={2}>
+                <Grid item xs={12} sm={3} md={2}>
                     <Filters />
                 </Grid>  
-                <Grid item xs={12} sm={10}>
+                <Grid item xs={12} sm={9} md={10}>
                     <Grid container spacing={2}>
                         {flights.map(f=><Flight key={f.flight_number} flight={f}/>)}
                     </Grid>
